@@ -637,6 +637,7 @@ const stocks = [8, 3, 12, 6];
 for (let i = 0; i < donuts.length; i++) {
     console.log(`오늘의 도넛 : ${donuts[i]}`);
 }
+
 // 5. 판매 수량 합계 계산 (for문 사용)
 let totalSales = 0;
 for (let i = 0; i < sales.length; i++) {
