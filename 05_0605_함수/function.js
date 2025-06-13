@@ -11,7 +11,19 @@
 // 함수 호이스팅 : 함수를 선언하기 전에 호출해도 호출되는 현상
 
 // 숫자 x, y와 연산 부호 operator를 입력 받아, 연산 부호에 맞는 계싼기 함수
-const calculate = function(x, y, operator) {
-    // 의사코드 (pseudo code): 코드를 쓰기 전에 인간의 언어로 어떤 식으로 동작해야 하는지 설명
+// const calculate = function(x, y, operator) {
+//     // 의사코드 (pseudo code): 코드를 쓰기 전에 인간의 언어로 어떤 식으로 동작해야 하는지 설명
     
+// }
+
+const eventHandler = () => {
+	const value = 20241022 + '';
+	console.log(value);
+	return value;
 }
+
+const a = eventHandler
+const b = eventHandler();
+
+console.log(typeof a);
+console.log(typeof b);

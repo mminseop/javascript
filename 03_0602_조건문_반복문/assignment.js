@@ -147,6 +147,25 @@ for (let i = 1; i <= n; i++) {
     console.log(space, star);
 }
 
+function star(num) {
+  for (let i=0; i < num; i++) {
+    let str = '';
+    // 공백
+    for (let j=-0; j< num-i-1; j++) {
+      str += ' ';
+    }
+    // 왼쪽 삼각형
+    for (let j=0; j<i+1; j++) {
+      str += '*';
+    }
+    //  오른쪽 삼각형
+    for (let j=0; j<i; j++) {
+      str += '*';
+    }
+    console.log(str);
+  }
+}
+star(5);
 // 5. 소수 판별하기
 /**
  * JavaScript 3일차 과제
