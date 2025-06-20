@@ -1,0 +1,156 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baseContainer {
+    min-width: 450px;
+}
+
+.calculatorContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e2e2e;
+    border-radius: 16px;
+    overflow: hidden;
+    height: auto;
+    padding: 20px;
+}
+
+.calculatorContainer .headerWrap {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.calculatorContainer .headerWrap button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: default;
+    transition: opacity 0.2s;
+}
+
+.calculatorContainer .headerWrap button:nth-child(1) {
+    background-color: #fc6355;
+}
+
+.calculatorContainer .headerWrap button:nth-child(2) {
+    background-color: #ffbd2e;
+}
+
+.calculatorContainer .headerWrap button:nth-child(3) {
+    background-color: #27c93f;
+}
+
+.headerWrap button:hover {
+    opacity: 0.8; /* 조금 흐리게 */
+}
+
+.calculatorContainer .displayWrap {
+    display: flex;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    color: #fff;
+    min-height: 70px;
+    justify-content: end;
+    align-items: center;
+    font-size: 3rem;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.calculatorContainer .buttonWrap {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 30px 0 20px 0;
+    gap: 15px;
+}
+
+.calculatorContainer .buttonWrap .buttonRows {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .button {
+    width: 23%;
+    min-height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .zero {
+    width: 50%;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .darkBtn {
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .darkBtn:hover {
+    background-color: #4a4a4a;
+    cursor: pointer;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .darkBtn:active {
+    background-color: #302e2e;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .orangeBtn { 
+    background-color: #cc7a00;
+    color: #fff;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .orangeBtn:hover {
+    background-color: #e68a00;
+    cursor: pointer;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .orangeBtn:active {
+    background-color: #cd7c03;
+    cursor: pointer;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .equlBtn {
+    background-color: #2962ff;
+    color: #fff;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .equlBtn:hover {
+    background-color: #3d78ff;
+    cursor: pointer;
+}
+
+.calculatorContainer .buttonWrap .buttonRows .equlBtn:active {
+    background-color: #1856e8;   
+}

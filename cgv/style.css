@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #333;
+}
+
+.baseContainer {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.dateContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-top: 3px solid #333;
+}
+
+.dateContainer .dateWrap {
+    display: flex;
+    justify-content: start;
+    padding: 12px;;
+}
+
+.dateContainer .dateWrap .dateBox {
+    display: flex;
+    align-items: center;
+    min-width: 77px;
+    min-height: 48px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.dateContainer .dateWrap .dateBox.selected {
+    border: 3px solid #333;
+}
+
+.dateContainer .dateWrap .dateBox .dateLeft {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 40px;
+    align-items: center;
+    justify-content: end;
+    padding: 5px 0;
+}
+
+.dateContainer .dateWrap .dateBox .dateRight {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #717171;
+}
+
+.dateContainer .dateWrap .dateBox.selected .dateRight {
+    font-weight: 700;
+    color: #333 !important;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 7px;
+}
+.infoContainer .priceInfoWrap,
+.infoContainer .ageRatingWrap {
+    cursor: pointer;
+}
+
+.infoContainer .priceInfoWrap span,
+.infoContainer .ageRatingWrap span {
+    font-weight: 600;
+}
+
+.timeInfoContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-top: 3px solid #333;
+    border-bottom: 1px solid #333;
+    height: 40px;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.movieContainer {
+    margin: 20px 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movieContainer .movieWrap {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.movieContainer .movieWrap:last-child {
+    border-bottom: 3px solid #333;
+    padding-bottom: 30px;
+}
+
+.movieContainer .movieWrap .movieHeader {
+    display: flex;
+    gap: 15px;
+    height: 60px;
+    align-items: center;
+}
+
+
+.movieContainer .movieWrap .movieHeader .ratings {
+    /* background-color: green; */
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 2px;
+}
+
+.all {
+    background-color: #269c56;
+}
+
+.fifteen {
+    background-color: #dd742f;
+}
+
+.twelve {
+    background-color: #e9b62f;
+}
+
+.eighteen {
+    background-color: #d92b35;
+}
+
+.movieContainer .movieWrap .movieHeader .title {
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.movieContainer .movieWrap .movieHeader .showing {
+    border: 2px solid #3e82a4;
+    padding: 0 5px;
+    font-weight: 550;
+    color: #3e82a4;
+    font-size: 0.9rem;
+}
+
+.movieContainer .movieWrap .movieHeader .infoWrap {
+    font-size: 0.85rem;
+}
+
+.movieContainer .movieWrap .reserveWrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.movieContainer .movieWrap .reserveWrap .top {
+    display: flex;
+    gap: 15px;
+}
+
+.movieContainer .movieWrap .reserveWrap .top .icon {
+    position: relative;
+    top: 3px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.movieContainer .movieWrap .reserveWrap .top span {
+    font-size: 0.8rem;
+}
+
+.movieContainer .movieWrap .reserveWrap .top span::before {
+    position: relative;
+}
+
+.movieContainer .movieWrap .reserveWrap .top span::after {
+    position: relative;
+    content: "|";
+    top: -2px;
+    left: 7px;
+    font-size: 0.55rem;
+}
+
+.movieContainer .movieWrap .reserveWrap .top span:first-child::after {
+    position: relative;
+    content: "";
+}
+
+.movieContainer .movieWrap .reserveWrap .top span:last-child::after {
+    position: relative;
+    content: "";
+}
+
+.movieContainer .movieWrap .reserveWrap .timeWrap {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 15px 0;
+}
+
+.movieContainer .movieWrap .reserveWrap .timeWrap .item {
+    border: 1px solid #cbcabe;
+    padding: 3px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieContainer .movieWrap .reserveWrap .timeWrap .item:hover {
+    cursor: pointer;
+}
+
+.movieContainer .movieWrap .reserveWrap .timeWrap .item .time {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.movieContainer .movieWrap .reserveWrap .timeWrap .item .seats {
+    font-size: 11px;
+}

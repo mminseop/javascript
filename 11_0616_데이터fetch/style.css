@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #333;
+}
+
+header {
+    border-bottom: 1px solid #cccccc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.baseContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.headerWrap {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.headerWrap .searchWrap {
+    height: 100%;
+    display: flex;
+    gap: 10px;;
+    align-items: center;
+}
+
+.headerWrap .searchWrap .searchInput {
+    height: 50%;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+
+.headerWrap .searchWrap .searchBtn {
+    height: 50%;
+    font-size: 1.2rem;
+    width: 100px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 0 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.headerWrap .searchWrap .searchBtn:hover {
+  background-color: #f9f9f9;
+  border-color: #bbbbbb;
+}
+
+.headerWrap .selectWrap {
+    height: 100%;
+    display: flex;
+    gap: 10px;;
+    align-items: center;
+}
+
+.headerWrap .selectWrap #dogSelect {
+    height: 50%;
+    width: 200px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    padding-left: 10px;
+    outline: none;
+}
+
+main {
+    margin: 120px 0 20px 0;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer .dogItem {
+    margin-top: 10px;;
+}
+
+.mainContainer .dogItem img {
+    width: 13rem;
+    height: 13rem;
+}
