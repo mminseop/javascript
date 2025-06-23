@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.baseContainer {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.pkmContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px #333;
+    padding: 30px;
+}
+
+.pkmContainer .titleWrap h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e90ff;
+}
+
+.pkmContainer .contents {
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 220px;
+}
+
+.pkmContainer .contents img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contents img:hover {
+    transform: scale(1.05);
+}
+
+.contents h2 {
+    font-size: 1.5rem;
+    color: #2f3542;
+}
+
+.btnWrap {
+    display: flex;
+    gap: 10px;
+}
+
+.drawBtn,
+.evolveBtn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.drawBtn:hover,
+.evolveBtn:hover {
+    background-color: #0c7cd5;
+}
