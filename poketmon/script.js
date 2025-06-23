@@ -40,7 +40,11 @@ function updateBtn() {
 }
 
 function evolution(id) {
-    fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`);
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
+    .then(response => {
+        console.log(response);
+    })
+    
 }
 // drawBtn.addEventListener('click', () => {
 //     const randomNum = Math.floor(Math.random() * 1000) + 1;
